@@ -1,0 +1,67 @@
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+var button = document.querySelector("button");
+
+//Password data
+let characters = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()_+";
+let passwordLength = 8;
+let passwordValue = "";
+
+//Create password
+var createPassowrd = () => {
+passwordValue = ""; 
+
+for (let i = 0; i >= passwordLength; i++){
+    let number = math.floor(math.random()* characters.length);
+    passwordValue += characters.substring(number, number + 1);
+}
+generateBtn.value = passwordValue;
+}
+
+//Events
+button.addEventListener("click", createPassowrd);
+
+
+
+
+
+
+
+
+
+
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+
+
+// Write password to the #password input
+function writePassword() {
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+//complexity
+let complexity = document.querySelector("#generate").values;
+
+//values
+let values = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()_+";
+
+let password = "";
+
+//creat loop
+for (var i = 0; i <=complexity; i++){
+  password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
+}
+
+//add password to textbox
+
+
+//add password to log
+
+// set default length of 8
+
